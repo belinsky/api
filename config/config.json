@@ -1,0 +1,27 @@
+{
+  "port": 8000,
+  "socket": {
+      "port": 8001
+  },
+  "mongoose": {
+    "uri": "mongodb://127.0.0.1/test_react",
+    "options": {
+      "server": {
+        "socketOptions": {
+          "keepAlive": 1
+        }
+      }
+    },
+    "limit": 100,
+    "orderBy": "-created"
+  },
+  "session": {
+    "secret": "secret set of words",
+    "key": "sid",
+    "cookie": {
+      "path": "/",
+      "httpOnly": true,
+      "maxAge": null
+    }
+  }
+}
